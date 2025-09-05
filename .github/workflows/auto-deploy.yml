@@ -3,9 +3,6 @@ name: auto-deploy.yml
 run-name: Deployment triggered by ${{ github.event_name }} / ${{ github.actor }}
 
 on:
-  push:
-    branches:
-      - "master"
   workflow_dispatch:
 
 # Only run 1 workflow at a time. If new one starts abort any that are already running.
